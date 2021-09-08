@@ -7,8 +7,8 @@ The sample program SimpleInterpreter.java from Subsection 10.4.1 can carry out c
 of the form “let variable = expression” or “print expression”. That program can
 handle expressions that contain variables, numbers, operators, and parentheses. Extend
 the program so that it can also handle the standard mathematical functions sin, cos,
-tan, abs, sqrt, and log. For example, the program should be able to evaluate an expres-
-sion such as sin(3*x-7)+log(sqrt(y)), assuming that the variables x and y have been
+tan, abs, sqrt, and log. For example, the program should be able to evaluate an expression
+such as sin(3*x-7)+log(sqrt(y)), assuming that the variables x and y have been
 given values. Note that the name of a function must be followed by an expression that is
 enclosed in parentheses.
 In the original program, a symbol table holds a value for each variable that has been
@@ -19,16 +19,19 @@ private enum Functions { SIN, COS, TAN, ABS, SQRT, LOG }
 /**
 * An object of this class represents one of the standard functions.
 */
+
 private static class StandardFunction {
 /**
 * Tells which function this is.
 */
+
 Functions functionCode;
 /**
 * Constructor creates an object to represent one of
 * the standard functions
 * @param code which function is represented.
 */
+
 StandardFunction(Functions code) {
 functionCode = code;
 }
@@ -36,6 +39,7 @@ functionCode = code;
 * Finds the value of this function for the specified
 * parameter value, x.
 */
+
 double evaluate(double x) {
 switch(functionCode) {
 case SIN:
