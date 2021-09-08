@@ -75,3 +75,4 @@ StandardFunction, then the word is a function. Remember that you can test the ty
 an object using the instanceof operator. For example: if (obj instanceof Double).
 
 Notes: TextIO is an IO helper class created by the textbook's author to assist with IO before the book covers java's IO utilities.
+ 
